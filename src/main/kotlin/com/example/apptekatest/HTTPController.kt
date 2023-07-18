@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/items")
-class DemoController(private val itemRepository: ItemRepository) {
+class HTTPController(private val itemRepository: ItemRepository) {
 
     @GetMapping
     fun getAllItems(): ResponseEntity<List<Item>> {
